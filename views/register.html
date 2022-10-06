@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Registro de usuario</title>
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <img class="logo-liebre" src="images/logo-mercado-liebre.svg" alt="Logo">
+            <div class="contenedorSearch">
+                <form class="barrita" acction="/" >
+                    <input class="search" type="text" placeholder="¿Que buscas?" name="search">
+                    <button><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <h3 id="slogan" ><i class="fa-solid fa-sack-dollar"></i>Comprá en cuotas y sin tarjeta de crédito</h2>
+        </div>        
+            <ul class="lista-ingreso">
+                <div class="compra">
+                    <li>Ofertas</li>
+                    <li>Tiendas Oficiales</li>
+                    <li>Vender</li>
+                    <li>Ayuda</li>
+                </div>
+                <div class="cuenta">
+                    <a href="/register"><li>Creá tu cuenta <i class="fa-solid fa-user-group"></i></li></a>
+                    <a href="/login"><li>Ingresá <i class="fa-solid fa-right-to-bracket"></i></li></a>
+                    <li>Mis compras <i class="fa-solid fa-bag-shopping"></i></li>
+                </div>
+            </ul> 
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <form>
+        <div class="nombre">
+            <h4 class="sub-register">Nombre de usuario</h4>
+            <input type="text" name="nombreCompleto" class="usuario" placeholder="Nombre completo">
+            <input type="text" name="nombreUsuario" class="usuario" placeholder="Nombre de usuario">
+            <input type="email" name="email" class="usuario" placeholder="E-mail">
+        </div>
+        <div class="nacimiento">
+                <h4 class="sub-register">Fecha de nacimiento</h4>
+                <input type="date" name="date" id="date">
+                <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
+        </div>
+        <div class="usuario-perfil">
+            <h4 class="sub-register2">Perfil de usuario</h4>
+            <div class="compra-vende">
+                <label>Vendedor</label>
+                <input type="radio" name="perfilUsuario" value="comprador">
+                <label>Comprador</label>
+                <input type="radio" name="perfilUsuario" value="vendedor">
+            </div>   
+        </div>
+        <div class="intere">
+            <h4 class="sub-register2">Intereses</h4>
+            <label class="label-titulo"><input type="checkbox" name="intereses" value="Electro">Electro</label>
+            <label class="label-titulo"><input type="checkbox" name="intereses" value="Moda">Moda</label>
+            <label class="label-titulo"><input type="checkbox" name="intereses" value="Hogar">Hogar</label>
+            <label class="label-titulo"><input type="checkbox" name="intereses" value="Juguetería">Juguetería</label>
+            <label class="label-titulo"><input type="checkbox" name="intereses" value="Vida sana">Vida sana</label>
+        </div>
+        <div class="foto">
+            <h4 class="sub-register2">Foto de usuario</h4>
+            <input type="file" name="fotoUsuario" accept=".jgp .png">
+        </div>    
+        <div class="pass">  
+            <h4 class="sub-register">Contraseña</h4>
+            <label>Contraseña</label>
+            <input type="password" class="contraseña" name="intereses">
+            <label>Confirmar contraseña</label>
+            <input type="password" class="contraseña" name="intereses">
+        </div>
+        <div class="botones-contenedor">
+            <button class="boton" type="submit"><a href="/">Enviar</a></button>
+            <button class="boton" type="reset">Borrar</button>
+        </div>
+    </form>
+</body>
+</html>

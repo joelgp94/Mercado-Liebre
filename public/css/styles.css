@@ -1,0 +1,534 @@
+*{
+    box-sizing: border-box;    
+}
+
+
+@media (min-width: 361px){
+    .productos{
+        /* box-shadow: 0px 0px 10px rgb(100, 100, 100); */
+        width: 48%;
+    }
+
+
+    .lista-ingreso{
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+    .descripcion{
+        font-size: 16px;
+        margin-top: 0;  
+        color: rgb(126, 126, 126);
+        
+    }
+}
+
+@media (min-width: 769px){   
+    
+    footer {
+        display: flex;
+        margin-top: 26vw;    
+    }
+        
+    .productos{
+        width: 20%;
+    }
+    
+    .productos:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    
+    .productos:hover .fa-truck{
+        transform: rotate(-90deg);
+    }
+    
+    .productos:hover .descripcion{
+        display: block;
+    }
+    
+    
+    .burger-menu{
+        display: none;
+    }
+
+    
+    .lista-ingreso{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .descripcion{
+        display: none;
+        font-size: 16px;
+        margin-top: 0;  
+        color: rgb(126, 126, 126);   
+    }
+
+    .copy{
+        display: flex;
+        justify-content: flex-start;
+        color: gray;
+    }
+
+    .fa-credit-card:hover{
+        color: aqua
+    }
+    
+    .fa-gift:hover{
+        color: aqua;
+    }
+
+    .fa-user-shield:hover{
+        color: aqua;
+    }
+
+    /* register.html */
+
+    .sub-register{
+        text-align: center;
+    }
+
+    .sub-register2{
+        text-align: center;
+    }
+    
+    .label-titulo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .usuario-perfil{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .usuario {
+        width: 45%;
+        max-width: 500px;
+    }
+
+    #date {
+        width: 45%;
+        max-width: 500px;
+    }
+
+    #domicilio {
+        width: 45%;
+        max-width: 500px;
+    }
+
+    .contraseña {
+        width: 45%;
+        max-width: 500px;
+    }
+
+    .botones-contenedor {
+        padding-left: 30vw;
+        padding-right: 30vw;
+    }
+
+    /* login.html */
+
+    #nombreLogin {
+        height: 17%;
+        border-style: none;
+        border-radius: 6px;
+        width: 45%;
+        max-width: 310px;
+
+    }
+
+    #contrasenaLogin {
+        width: 45%;
+        max-width: 310px;
+    }
+
+    .botonEnviar {
+        height: 35px;
+        width: 25%;
+        max-width: 200px;
+        transition: all 450ms;
+    }
+
+    .botonEnviar:hover{
+        background-color: #0022AA;
+    }
+    
+    .cajas-footer-login{
+        display: flex;
+        margin-top: 26vw;
+    }
+}
+
+@media (max-width: 360px){
+    .descripcion{
+        display: none;
+    }
+    .lista-ingreso{
+        display: none;
+    }
+
+    .contenedorSearch{
+        display: none;
+    }
+}
+
+.descripcion{
+    transition: all 5s;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: rgb(222, 219, 219);
+}
+
+header {
+    font-size: 12px;
+    background-color: #EAC926;
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+main{
+    width: 90%;
+    margin: auto;       
+}
+
+footer{
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 2vw;
+    
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+
+.logo-liebre{
+    width: 40%;
+}
+
+.header-top{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cuenta{
+    display: flex;
+    width: 51%;
+    justify-content: space-evenly;
+}
+
+.cuenta a{
+    text-decoration: none;
+    color: black;
+}
+
+.compra{
+    display: flex;
+    width: 40%;
+    justify-content: space-evenly;
+}
+
+.contenedorSearch{
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: center;
+}
+
+.barrita{
+    display: flex;
+    width: 100%;
+}
+
+.search{
+    width: 100%;
+}
+
+.banner{
+    width: 100vw;
+    margin-left: -5vw;
+}
+
+#slogan{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.lista-ingreso{
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.burger-menu{
+    text-align: center;
+    margin-left: 48%; 
+    margin-right: 48%;
+    background-color: blue;
+    border-radius: 0.3em;
+    color: white;
+    font-size: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 30px;
+}
+
+.img-productos {
+    width: 70%;
+    margin-left: 13%;
+}
+
+.titulares{
+    font-size: 24px;
+    background-color: rgb(222, 219, 219);
+}
+
+.fa-truck{
+    transition: all 350ms;
+}
+
+.precios{
+    font-size: 18px;
+    flex-grow: 0.03;
+}
+
+.descuentos{
+    font-size: 16px;    
+    color: #008000;
+}   
+
+.cajas-footer{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.productos{
+    margin-bottom: 10px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+    transition: all 450ms;
+}
+.pie-producto {
+    border-top: 5px solid #ebebeb;
+    padding: 0px 15px 1px 15px;
+    display: flex;
+    flex-direction: column;
+}
+.camioncito{
+    border: 1px solid #008000;
+    align-self: flex-end;
+    padding: 0.3rem;
+    border-radius: 1em;
+    transform: translateY(-50%);
+}
+
+.precio-descuento {
+    display: flex;
+    align-items: baseline;
+}
+
+.fa-truck:before {
+    content: "\f0d1";
+    padding: 5px;
+    color: green;
+}
+
+.icono-footer{
+    color: blue;
+    font-size: 25px;
+    transition: all 450ms;
+}
+
+.fa-credit-card:hover{
+    transition: all 1s;
+}
+
+.fa-gift:hover{
+    transition: all 1s;
+}
+
+.fa-user-shield:hover{
+    transition: all 1s;
+}
+
+/* Register-html */
+ 
+.sub-register{
+    width: 88%;
+}
+
+.sub-register2{
+    margin-left: 25px;
+}
+
+.nombre{
+    display: flex;
+    flex-direction: column;
+    height: 230px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nacimiento{
+    display: flex;
+    flex-direction: column;
+    height: 230px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.compra-vende{    
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    max-width: 300px;
+}
+
+
+.intere{
+    display: flex;
+    flex-direction: column;
+    height: 235px;
+    justify-content: space-between;
+}
+
+.pass{
+    display: flex;
+    flex-direction: column;
+    height: 230px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.usuario{
+    height: 17%;
+    border-style: none;
+    border-radius: 6px;
+    width: 90%;
+}
+
+#date{
+    height: 17%;
+    width: 90%;
+    border-style: none;
+    border-radius: 6px;
+}
+
+#domicilio{
+    height: 17%;
+    border-style: none;
+    border-radius: 6px;
+    width: 90%;
+}
+
+.contraseña{
+    height: 17%;
+    border-style: none;
+    border-radius: 6px;
+    width: 90%;
+}
+
+.label-titulo{
+    margin-left: 30px;
+}
+
+.botones-contenedor{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.boton{
+    height: 35px;
+    width: 120px;
+    border-style: none;
+    border-radius: 6px;
+    background-color: #0044aa;
+    color: white;
+    text-decoration: none;
+}
+
+.botones-contenedor .boton a{
+    text-decoration: none;
+    color: white;
+}
+
+/* Login-html */
+
+.login-html{
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#nombreLogin{
+    height: 17%;
+    border-style: none;
+    border-radius: 6px;
+    width: 90%;
+}
+
+#contrasenaLogin{
+    height: 17%;
+    border-style: none;
+    border-radius: 6px;
+    width: 90%;
+}
+
+.botonEnviar{
+    height: 35px;
+    width: 90%;
+    border-style: none;
+    background-color: #0044aa;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+}
+
+.botonEnviar a{
+    color: white;
+    text-decoration: none;
+}
+
+.cajas-footer-login{
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 2vw;
+    margin-top: 90px;
+}
